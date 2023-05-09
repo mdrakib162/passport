@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Passport Application Information</title>
+    <style>
+        div.form{
+            width: 20cm;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        label{
+            width: 240px;
+            display: inline-block;
+            margin: 0.2cm;
+            padding: 3px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 250px;
+            height: 25px;
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        input[type="text"] {
+            font-size: 15px;
+            padding: 2px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 243px;
+        }
+
+        input[type="number"] {
+            font-size: 15px;
+            padding: 2px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 243px;
+        }
+
+        input[type="email"] {
+            font-size: 15px;
+            padding: 3px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 243px;
+        }
+
+        input[type="date"] {
+            font-size: 15px;
+            padding: 3px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 243px;
+        }
+
+        input[type="submit"]{
+            margin-left: 450px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body background="./peakpx.jpg" style="background-attachment: fixed; background-size: cover;">
+    <h1 style="text-align: center; font-size: 50px;">PASSPORT APPLICATION STAGE NO-01</h1>    <div class="form">
+            <font face="arial">
+            <form action="result.html" method="get">
+    <h2 style="color:indigo;">Passport Application information</h2 style="color:indigo;">
+    <label for="">Applying in:<span style="color: red;">*</span></label>                        <select name="country"  required>
+        <option value="">Select your country</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="us">US</option>
+    </select>
+    <br>
+    <label for="">Application Type:</label>               <b>NEW APPLICATION</b>
+    <br>
+    <label for="">Passport Type:<span style="color: red;">*</span></label>                   <select name="passport"  required>
+        <option value="">Choice one</option>
+        <option value="ordinary">ORDINARY</option>
+        <option value="disordinary">DISORDINARY</option>
+    </select>
+    <br>
+    <label for="">Supporting Document:</label>        <select name="SDocument" >
+        <option value="">-SELECT-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <br>
+    <label for="">Delivery Type:</label>                     <input type="radio" name="Dtype" value="regular">Regular <br>
+                                                <input type="radio" name="Dtype" value="express" style="margin-left: 271px;">Express
+    <br>
+    <br>
+    <h2 style="color:indigo;">Personal Information</h2 style="color:indigo;">
+    <label for="">Name of application:<span style="color: red;">*</span></label>          <input type="text" placeholder="Enter full name"  required>
+    <br>
+    <label for="">First Part (Given Name):</label>     <input type="text" placeholder="Nikename" >
+    <br>
+    <label for="">Second Part (Surname):<span style="color: red;">*</span></label>    <input type="text" placeholder="Identity Name"  required>
+    <br>
+    <br>
+    <label for="" name="Guardian">Guardian</label> <input type="checkbox" name="Guardian"> <span style="color: red;">"Tick"</span> only if Applicant is legally adapted
+    <br>
+    <label for="">Father's name:<span style="color: red;">*</span></label>                   <input type="text" placeholder="Enter name"  required>
+    <br>
+    <label for="">Father's Nationality:<span style="color: red;">*</span></label>           <select name="Fnationality"  required>
+        <option value="">Select one</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="bangladesh">Bangladesh</option>
+    </select>
+    <br>
+    <label for="">Father's Profession:<span style="color: red;">*</span></label>           <select name="Fprofession" id=""  required>
+        <option value="">Select one</option>
+        <option value="Gemploy">Govt. Employ</option>
+        <option value="businessman">Businessman</option>
+        <option value="farmer">Farmer</option>
+        <option value="nothing">Nothing</option>
+    </select>
+    <br>
+    <label for="">Mother's name:<span style="color: red;">*</span></label>                  <input type="text" placeholder="Enter name"  required>
+    <br>
+    <label for="">Mother's Nationality:<span style="color: red;">*</span></label>          <select name="Mnationality"  required>
+        <option value="">Select one</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="bangladesh">Bangladesh</option>
+    </select>
+    <br>
+    <label for="">Mother's Profession:<span style="color: red;">*</span></label>          <select name="Mprofession" id=""  required>
+        <option value="">Select one</option>
+        <option value="Gemploy">Govt. Employ</option>
+        <option value="businessman">Businessman</option>
+        <option value="farmer">Farmer</option>
+        <option value="h.wife">House Wife</option>
+    </select>
+    <br>
+    <label for="">Spouse's name:</label>                  <input type="text" placeholder="Enter name" >
+    <br>
+    <label for="">Spouse's Nationality:</label>          <select name="Snationality" >
+        <option value="">Select one</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="bangladesh">Bangladesh</option>
+    </select>
+    <br>
+    <label for="">Spouse's Profession:</label>          <select name="Sprofession" id="" >
+        <option value="">Select one</option>
+        <option value="Gemploy">Govt. Employ</option>
+        <option value="businessman">Businessman</option>
+        <option value="farmer">Farmer</option>
+        <option value="nothing">Nothing</option>
+    </select>
+    <br>
+    <label for="">Marital Status:<span style="color: red;">*</span></label>                   <select name="Marital" id=""  required>
+        <option value="">Select one</option>
+        <option value="single">Single</option>
+        <option value="marid">Marid</option>
+    </select>
+    <br>
+    <label for="">Applicant's Profession:<span style="color: red;">*</span></label>      <select name="Aprofession" id=""  required>
+        <option value="">Select one</option>
+        <option value="Gemploy">Govt. Employ</option>
+        <option value="businessman">Businessman</option>
+        <option value="student">Student</option>
+    </select>
+    <br>
+    <label for="">Counrty of Birth:<span style="color: red;">*</span></label>                <select name="Cbirth"  required>
+        <option value="">Select one</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="bangladesh">Bangladesh</option>
+    </select>
+    <br>
+    <label for="">District of Birth:<span style="color: red;">*</span></label>                 <select name="district of birth"  required>
+        <option value="">Select one</option>
+        <option value="dhaka">Dhaka</option>
+        <option value="chattogram">Chattogram</option>
+        <option value="rajbari">Rajbari</option>
+    </select>
+    <br>
+    <label for="">Date of Birth:<span style="color: red;">*</span></label>                     <input type="date" name="birth date" id=""  required>
+    <br>
+    <label for="">Gender:<span style="color: red;">*</span></label>                            <input type="radio" name="Gender" value="male" required>Male <br>
+                                            <input type="radio" name="Gender" value="female" style="margin-left: 271px;" required>Female <br>
+                                            <input type="radio" name="Gender" value="gay" style="margin-left: 271px; margin-top: 15px;" required>Otheres
+    <br>
+    <label for="">Birth ID No:<span style="color: red;">*</span></label>                       <input type="number" placeholder="type birth id no" name="birth id"  required>
+    <br>
+    <label for="">Natiional Id No:</label>                  <input type="number" placeholder="type  NID no" name="nid" >
+    <br>
+    <label for="">Tax ID No:</label>                          <input type="number" name="tax-id-1" min="0" max="99" style="width: 30px"> - <input type="number" name="tax-id-2" min="0" max="99" style="width: 30px"> - <input type="number" name="tax-id-3" min="0" max="99" style="width: 30px">
+    <br>
+    <label for="">Height:<span style="color: red;">*</span></label>                              <input type="number" name="height-1" min="0" max="999" style="width: 40px" required> cm <input type="number" name="height-2" min="0" max="99" style="width: 40px" required> inch 
+    <br>
+    <label for="">Religion:<span style="color: red;">*</span></label>                           <select name="religion" id=""  required>
+        <option value="">Select one</option>
+        <option value="hindu">Hindu</option>
+        <option value="islam">Islam</option>
+        <option value="buddho">Buddho</option>
+        <option value="khirsthan">Khirsthan</option>
+    </select>
+    <br>
+    <label for="">Organization:</label>                     <select name="Organization" id="" >
+        <option value="">Select one</option>
+    </select>
+    <br>
+    <label for="">Email:<span style="color: red;">*</span></label>                               <input type="email" name="email" placeholder="example@gmail.com"  required>
+    <br>
+    <br>
+    <h2 style="color:indigo;">Citizenship Information</h2 style="color:indigo;">
+    <label for="">Nationality:<span style="color: red;">*</span></label>                       <select name="Organization" id=""  required>
+        <option value="">Select one</option>
+        <option value="bangladeshi">Bangladeshi</option>
+        <option value="amarican">Amarican</option>
+        <option value="korean">Korean</option>
+    </select>
+    <br>
+    <label for="">Citizenship Status:<span style="color: red;">*</span></label>           <select name="Citizenship" id=""  required>
+        <option value="">Select one</option>
+        <option value="bangladeshi">Bangladeshi</option>
+        <option value="amarican">Amarican</option>
+        <option value="korean">Korean</option>
+    </select>     
+    <br>
+    <label for="">Dual Citizenship:<span style="color: red;">*</span></label>            <input type="radio" name="Dcitizenship" value="yes" required>YES <br>
+                                            <input type="radio" name="Dcitizenship" value="no" style="margin-left: 271px;" required>NO
+    <br>
+    <br>
+    <h2 style="color:indigo;">Overseas Address</h2 style="color:indigo;">
+    <label for="">Address:<span style="color: red;">*</span></label>                          <input type="text" name="address" placeholder="Enter address"  required><br>
+                                            <input type="text" name="address" style="margin-left: 266px;">
+    <br>
+    <label for="">Country:<span style="color: red;">*</span></label>                           <select name="country" id=""  required>
+        <option value="">Select one</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br>
+    <br>
+    <h2 style="color:indigo;">Permanent Adderss</h2 style="color:indigo;">
+    <label for="">Village/House:</label>                   <input type="text" name="address" ><br>
+    <label for="">Road/Block/Sector:</label>           <input type="text" name="address" >
+    <br>
+    <label for="">District:<span style="color: red;">*</span></label>                            <select name="country" id=""  required>
+        <option value="">Select one</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br>
+    <label for="">Police Status:<span style="color: red;">*</span></label>                  <select name="country" id=""  required>
+        <option value="">Select one</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br>
+    <label for="">Post Office:<span style="color: red;">*</span></label>                     <select name="country" id=""  required>
+        <option value="">Select one</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br>
+                                                                                    <input type="submit" value="SAVE & NEXT" style="width: 150px;">
+            </form>
+            </font>
+        </div>
+</body>
+</html>
